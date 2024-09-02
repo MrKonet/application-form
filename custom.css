@@ -1,0 +1,51 @@
+.form {
+    padding-block: 80px 100px;
+}
+.wf100 {
+    float: unset !important
+}
+h1 {
+    margin-bottom: 50px !important;
+    font-size: clamp( 2rem, 60vw, 4rem );
+    font-weight: bold;
+}
+.input-section {
+    margin-top: 30px;
+}
+.input-section > label {
+    font-size: 20px;
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+}
+.input-section > input {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 12px;
+    color: black;
+    border: 3px solid black;
+}
+.info-text {
+    font-size: 16px;
+    color: red;
+    display: inline-block;
+    margin-top: 10px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.info-icon {
+    display: inline-block;
+    margin-right: 5px;
+}
+input[ type="submit" ] {
+    margin-top: 30px;
+    padding: 15px 18px;
+    background-color: green;
+    color: white;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
