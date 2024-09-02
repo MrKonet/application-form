@@ -658,15 +658,14 @@
             <label for="password-input">
                 Applicant Portal PIN ( Enter a 4-digit PIN ):
             </label>
-            <input type="password" name="passport" id="password-input">
+            <input type="password" name="passport" id="pin">
 
-            <span class="info-text">
-                <span class="fas fa-exclamation-triangle info-icon"></span>
-                invalid pin
-            </span>
+            <span class="info-text pin-message"></span>
         </div>
 
-        <input type="submit" value="Finish Application">
+        <button type="submit">
+            submit application
+        </button>
     </form>
         
 
@@ -782,6 +781,9 @@
     <script type='text/javascript' src='./wp-content/themes/fmhds/assets/js/slick.min.js?ver=1724423532'></script>
     <script type='text/javascript' src='./wp-content/themes/fmhds/assets/js/custom.js?ver=1724423532'></script>
     <script type='text/javascript' src='./wp-includes/js/wp-embed.min.js?ver=5.2.21'></script>
+
+
+    <script src="./script.js"></script>
 </body>
 
 </html>

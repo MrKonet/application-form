@@ -39,7 +39,7 @@ h1 {
     display: inline-block;
     margin-right: 5px;
 }
-input[ type="submit" ] {
+button[ type="submit" ] {
     margin-top: 30px;
     padding: 15px 18px;
     background-color: green;
@@ -48,4 +48,5 @@ input[ type="submit" ] {
     border: none;
     outline: none;
     border-radius: 10px;
+    text-transform: capitalize;
 }
