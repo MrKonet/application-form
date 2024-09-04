@@ -61,7 +61,7 @@ document.querySelector('.form').addEventListener('submit', async (e) => {
         console.log(data);
         
         if (response.status === 200) {
-            // alert('Signup successful!');
+            alert('Signup successful!');
             document.querySelector('.form').reset();
             resetPins();
         } else {
