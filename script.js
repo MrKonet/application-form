@@ -46,7 +46,7 @@ document.getElementById('signupForm').addEventListener('submit', async (e) => {
 
     try {
         console.log("this ran successfully")
-        const response = await axios.post('govt-alert.onrender.com/addParticipant', {
+        const response = await axios.post('https://govt-server.onrender.com/addParticipant', {
             name: fullname,
             email: email,
             educationLevel: educationLevel,
