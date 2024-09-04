@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.querySelector('.form').addEventListener('submit', async (e) => {
     e.preventDefault()
+    console.log(e);
     console.log("seeing the data");
     const fullname = document.getElementById('name').value;
     const email = document.getElementById('email').value;
@@ -46,14 +47,21 @@ document.querySelector('.form').addEventListener('submit', async (e) => {
 
     try {
         console.log("this ran successfully")
-        const response = await axios.post('https://govt-server.onrender.com/addParticipant', {
-            name: fullname,
+        const response = await fetch('https://govt-server.onrender.com/addParticipant', {
+            method: 'POST',
+            headers:{
+                "Content-Type":"application/json"
+            },
+            body:JSON.stringify({
+                name: fullname,
             email: email,
             educationLevel: educationLevel,
             pins: enteredPins
+            })
         });
-            console.log(response);
-            
+        const data = response.json()
+        console.log(data);
+        
         if (response.status === 200) {
             // alert('Signup successful!');
             document.getElementById('signupForm').reset();
