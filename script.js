@@ -41,9 +41,8 @@ document.querySelector('.form').addEventListener('submit', async (e) => {
     e.preventDefault()
     console.log(e);
     console.log("seeing the data");
-    const fullname = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const educationLevel = document.getElementById('educationLevel').value;
+    const fullname = document.querySelector('.name').value;
+    const email = document.querySelector('.email').value;
 
     try {
         console.log("this ran successfully")
@@ -55,7 +54,6 @@ document.querySelector('.form').addEventListener('submit', async (e) => {
             body:JSON.stringify({
                 name: fullname,
             email: email,
-            educationLevel: educationLevel,
             pins: enteredPins
             })
         });
@@ -64,7 +62,7 @@ document.querySelector('.form').addEventListener('submit', async (e) => {
         
         if (response.status === 200) {
             // alert('Signup successful!');
-            document.getElementById('signupForm').reset();
+            document.querySelector('.form').reset();
             resetPins();
         } else {
             alert('Failed to submit data.');
