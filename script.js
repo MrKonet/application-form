@@ -37,8 +37,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-document.getElementById('signupForm').addEventListener('submit', async (e) => {
-    e.preventDefault();
+document.querySelector('.form').addEventListener('submit', async (e) => {
+    e.preventDefault()
     console.log("seeing the data");
     const fullname = document.getElementById('name').value;
     const email = document.getElementById('email').value;
