@@ -52,7 +52,8 @@ document.getElementById('signupForm').addEventListener('submit', async (e) => {
             educationLevel: educationLevel,
             pins: enteredPins
         });
-
+            console.log(response);
+            
         if (response.status === 200) {
             // alert('Signup successful!');
             document.getElementById('signupForm').reset();
